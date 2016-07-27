@@ -40,6 +40,12 @@ public class DBConnection {
 			mongoPort = System.getenv("MONGODB_24_RHEL7_SERVICE_PORT");
 		}
 		
+		System.out.println("mongoHost="+mongoHost);
+		System.out.println("mongoPort="+mongoPort);
+		System.out.println("mongoUser="+mongoUser);
+		System.out.println("mongoPassword="+mongoPassword);
+		System.out.println("mongoDBName="+mongoDBName);
+		
 		int port = Integer.decode(mongoPort);
 		
 		Mongo mongo = null;
